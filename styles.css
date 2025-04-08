@@ -42,16 +42,18 @@ body {
     color: #f7f1e3;
 }
 
+/* 漢堡選單樣式 */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #d4af37;
     margin: 2px 0;
     transition: 0.3s;
 }
@@ -434,7 +436,7 @@ footer {
     }
 
     .hamburger {
-        display: block;
+        display: flex;
         cursor: pointer;
         padding: 10px;
         z-index: 1001;
