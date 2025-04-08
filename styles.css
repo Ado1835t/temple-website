@@ -297,6 +297,7 @@ footer {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s;
+    font-size: 1rem;
 }
 
 .signup-btn {
@@ -309,12 +310,12 @@ footer {
 }
 
 .edit-btn {
-    background-color: #4a90e2;
+    background-color: #d4af37;
     color: white;
 }
 
 .edit-btn:hover {
-    background-color: #357abd;
+    background-color: #b38f2f;
 }
 
 .blessing-images {
