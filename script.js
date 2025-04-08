@@ -77,12 +77,23 @@ document.addEventListener('DOMContentLoaded', function() {
         `,
         'blessing': `
             <div class="blessing-container">
-                <h2>祈福法會</h2>
                 <div class="blessing-content">
-                    <p>本宮定期舉辦各類祈福法會，為信眾消災解厄、祈福納吉。</p>
-                    <p>法會時間：每月農曆初二、十六</p>
-                    <p>報名方式：請親洽本宮或電話預約</p>
-                    <p>聯絡電話：(02) 2553-5492</p>
+                    <div class="blessing-text">
+                        <h2>祈福法會</h2>
+                        <p>本宮定期舉辦各類祈福法會，為信眾消災解厄、祈福納吉。</p>
+                        <p>法會時間：每月農曆初二、十六</p>
+                        <p>報名方式：請親洽本宮或電話預約</p>
+                        <p>聯絡電話：(02) 2553-5492</p>
+                        <a href="https://service.ss-temple.org.tw/donate/LIGHT_1.aspx" class="signup-btn" target="_blank">立即報名</a>
+                    </div>
+                    <div class="blessing-images">
+                        <div class="blessing-image">
+                            <img src="./images/blessing1.jpg" alt="祈福法會照片1" onerror="this.src='./images/placeholder.jpg'">
+                        </div>
+                        <div class="blessing-image">
+                            <img src="./images/blessing2.jpg" alt="祈福法會照片2" onerror="this.src='./images/placeholder.jpg'">
+                        </div>
+                    </div>
                 </div>
             </div>
         `
