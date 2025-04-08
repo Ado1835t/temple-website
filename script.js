@@ -102,9 +102,24 @@ document.addEventListener('DOMContentLoaded', function() {
             if (contentSections[sectionId]) {
                 contentDiv.innerHTML = contentSections[sectionId];
                 contentDiv.style.display = 'block';
+                console.log('Loading content for:', sectionId);
             }
         });
     });
+
+    // 初始載入六燈介紹內容
+    const sixLightsLink = document.querySelector('a[href="#six-lights"]');
+    if (sixLightsLink) {
+        sixLightsLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const contentDiv = document.querySelector('#services .content');
+            if (contentDiv && contentSections['six-lights']) {
+                contentDiv.innerHTML = contentSections['six-lights'];
+                contentDiv.style.display = 'block';
+                console.log('Loading six-lights content');
+            }
+        });
+    }
 
     // 檢測設備類型
     function isMobile() {
