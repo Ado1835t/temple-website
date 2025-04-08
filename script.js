@@ -32,6 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // 載入內容
+    const content = document.getElementById('content');
+    const menuLinks = document.querySelectorAll('.nav-links a');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = this.getAttribute('href').substring(1);
+            loadContent(section);
+        });
+    });
+
+    // 初始載入首頁內容
+    loadContent('home');
+
     // 滾動時改變導航欄樣式
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');

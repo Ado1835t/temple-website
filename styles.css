@@ -344,6 +344,7 @@ footer {
         display: block;
         cursor: pointer;
         padding: 10px;
+        z-index: 1001;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -356,6 +357,31 @@ footer {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* 內容區域樣式 */
+    .content {
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    /* 活動資訊和花絮樣式 */
+    .news-container, .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .news-item, .gallery-item {
+        margin-bottom: 1rem;
+    }
+
+    .news-item img, .gallery-item img {
+        height: 200px;
     }
 
     .footer-content {
