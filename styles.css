@@ -250,6 +250,33 @@ footer {
     background-color: #a01830;
 }
 
+/* 祈福法會樣式 */
+.blessing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.blessing-container h2 {
+    color: #c41e3a;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.blessing-content {
+    line-height: 1.8;
+}
+
+.blessing-content p {
+    margin: 1rem 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
 /* 響應式設計 */
 @media (max-width: 768px) {
     .nav-links {
@@ -405,6 +432,19 @@ footer {
         text-align: center;
         margin-right: 10px;
         color: white;
+    }
+
+    .blessing-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .blessing-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .blessing-content p {
+        font-size: 1rem;
     }
 }
 
