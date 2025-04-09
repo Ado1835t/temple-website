@@ -101,12 +101,35 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                     <div class="blessing-image" style="width: 440px; flex-shrink: 0; margin-top: 40px;">
-                        <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 330px; object-fit: cover;">
+                        <div class="slideshow-container">
+                            <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" class="slide active" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 330px; object-fit: cover;">
+                            <img src="images/blessing2.jpg" alt="醒心宮祈福法會，信眾虔誠參拜祈福" class="slide" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 330px; object-fit: cover;">
+                            <img src="images/blessing3.jpg" alt="醒心宮祈福法會，莊嚴隆重的法會現場" class="slide" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 330px; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>
         `
     };
+
+    // 圖片輪播功能
+    function initSlideshow() {
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // 每10秒切換一次圖片
+        setInterval(nextSlide, 10000);
+    }
 
     // 監聽子選單點擊事件
     document.querySelectorAll('.submenu a').forEach(link => {
@@ -119,6 +142,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 contentDiv.innerHTML = contentSections[sectionId];
                 contentDiv.style.display = 'block';
                 console.log('Loading content for:', sectionId);
+                
+                // 如果是祈福法會區塊，初始化輪播功能
+                if (sectionId === 'blessing') {
+                    initSlideshow();
+                }
             }
         });
     });
