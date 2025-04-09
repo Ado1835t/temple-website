@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p>
                             本宮長年舉辦各類 <strong>祈福法會</strong>，由資深法師依傳統科儀誦經禮拜，為信眾祈求身體健康、家庭平安、事業順利，亦能解冤釋結、轉運開運。
                         </p>
-                        <ul>
+                        <ul style="list-style-type: none; padding-left: 0;">
                             <li><strong>舉辦時間：</strong>每月農曆初二與十六</li>
                             <li><strong>地點：</strong>醒心宮</li>
                             <li><strong>報名方式：</strong>親洽或來電</li>
