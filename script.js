@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a href="https://forms.gle/您的表單網址" class="edit-btn">我要增修</a>
                         </div>
                     </div>
-                    <div class="blessing-image" style="width: 400px; height: 300px; margin-top: 20px;">
+                    <div class="blessing-image" style="width: 500px; height: 400px; margin-top: 20px;">
                         <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
