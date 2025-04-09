@@ -77,12 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
         `,
         'blessing': `
             <div class="blessing-container">
+                <h2>祈福法會｜每月定期舉辦，助您消災解厄、福運臨門</h2>
                 <div class="blessing-content">
                     <div class="blessing-text">
-                        <h2>祈福法會｜每月定期舉辦，助您消災解厄、福運臨門</h2>
                         <p>
                             本宮長年舉辦各類 <strong>祈福法會</strong>，由資深法師依傳統科儀誦經禮拜，為信眾祈求身體健康、家庭平安、事業順利，亦能解冤釋結、轉運開運。
                         </p>
+                        <div class="blessing-image">
+                            <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" onerror="this.src='images/placeholder.jpg'">
+                        </div>
                         <ul>
                             <li><strong>舉辦時間：</strong>每月農曆初二與十六</li>
                             <li><strong>地點：</strong>醒心宮</li>
@@ -98,11 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="blessing-buttons">
                             <a href="https://forms.gle/您的表單網址" class="signup-btn">我要報名</a>
                             <a href="https://forms.gle/您的表單網址" class="edit-btn">我要增修</a>
-                        </div>
-                    </div>
-                    <div class="blessing-images">
-                        <div class="blessing-image">
-                            <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" onerror="this.src='images/placeholder.jpg'">
                         </div>
                     </div>
                 </div>
