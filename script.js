@@ -104,9 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="blessing-image">
                             <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" onerror="this.src='images/placeholder.jpg'">
                         </div>
-                        <div class="blessing-image">
-                            <img src="images/blessing2.jpg" alt="醒心宮祈福法會，信眾虔誠參拜，祈求平安順遂" onerror="this.src='images/placeholder.jpg'">
-                        </div>
                     </div>
                 </div>
             </div>
