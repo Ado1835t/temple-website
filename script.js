@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `,
         'blessing': `
-            <div class="blessing-container" style="margin-top: 10px;">
+            <div class="blessing-container" style="margin-top: 30px;">
                 <h2>祈福法會｜每月定期舉辦，助您消災解厄、福運臨門</h2>
                 <div class="blessing-content" style="display: flex; align-items: flex-start; gap: 20px;">
                     <div class="blessing-text" style="text-align: left; flex: 1;">
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a href="https://service.ss-temple.org.tw/donate/ADDITEM.aspx" class="edit-btn" target="_blank">我要增修</a>
                         </div>
                     </div>
-                    <div class="blessing-image" style="width: 440px; flex-shrink: 0;">
+                    <div class="blessing-image" style="width: 440px; flex-shrink: 0; margin-top: 30px;">
                         <div class="slideshow-container" style="height: 330px;">
                             <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" class="slide active" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
                             <img src="images/blessing2.jpg" alt="醒心宮祈福法會，信眾虔誠參拜祈福" class="slide" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
