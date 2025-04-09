@@ -96,8 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             ‧ 希望解冤釋結、改善人際關係者
                         </p>
                         <div class="blessing-buttons">
-                            <a href="https://forms.gle/您的表單網址" class="signup-btn">我要報名</a>
-                            <a href="https://forms.gle/您的表單網址" class="edit-btn">我要增修</a>
+                            <a href="https://service.ss-temple.org.tw/donate/PRAY_1.aspx" class="signup-btn" target="_blank">我要報名</a>
+                            <a href="https://service.ss-temple.org.tw/donate/ADDITEM.aspx" class="edit-btn" target="_blank">我要增修</a>
                         </div>
                     </div>
                     <div class="blessing-image" style="width: 440px; flex-shrink: 0; margin-top: 40px;">
