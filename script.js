@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `,
         'blessing': `
-            <div class="blessing-container">
+            <div class="blessing-container" style="margin-top: 10px;">
                 <h2>祈福法會｜每月定期舉辦，助您消災解厄、福運臨門</h2>
                 <div class="blessing-content" style="display: flex; align-items: flex-start; gap: 20px;">
                     <div class="blessing-text" style="text-align: left; flex: 1;">
@@ -105,6 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             <img src="images/blessing1.jpg" alt="醒心宮祈福法會，道長誦經為信眾祈福，現場莊嚴隆重" class="slide active" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
                             <img src="images/blessing2.jpg" alt="醒心宮祈福法會，信眾虔誠參拜祈福" class="slide" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
                             <img src="images/blessing3.jpg" alt="醒心宮祈福法會，莊嚴隆重的法會現場" class="slide" onerror="this.src='images/placeholder.jpg'" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="slideshow-dots" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+                                <span class="dot active" style="width: 8px; height: 8px; background-color: #fff; border-radius: 50%; cursor: pointer;"></span>
+                                <span class="dot" style="width: 8px; height: 8px; background-color: #fff; border-radius: 50%; cursor: pointer;"></span>
+                                <span class="dot" style="width: 8px; height: 8px; background-color: #fff; border-radius: 50%; cursor: pointer;"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,17 +120,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // 圖片輪播功能
     function initSlideshow() {
         const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
         let currentSlide = 0;
         
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
             slides[index].classList.add('active');
+            dots[index].classList.add('active');
         }
         
         function nextSlide() {
             currentSlide = (currentSlide + 1) % slides.length;
             showSlide(currentSlide);
         }
+
+        // 點擊指示點切換圖片
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
         
         // 每10秒切換一次圖片
         setInterval(nextSlide, 10000);
